@@ -1,0 +1,774 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Professionals in Data and AI Survey 1\",\"Professionals in Data and AI Survey 1 (2)\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.129.905.0 (24.05)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-GB",
+    "cultures": [
+      {
+        "name": "en-GB",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "21fe65a0-91eb-4c42-8203-e23e41f278fa",
+        "fromColumn": "Timestamp",
+        "fromTable": "Professionals in Data and AI Survey 1",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_d2c7ea74-2e36-4899-94c9-6228b4acb044"
+      },
+      {
+        "name": "cf99a230-ae27-4e85-9510-1c7beec16428",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "Your Name",
+        "fromTable": "Professionals in Data and AI Survey 1",
+        "securityFilteringBehavior": "bothDirections",
+        "toCardinality": "many",
+        "toColumn": "Your Name",
+        "toTable": "Professionals in Data and AI Survey 1 (2)"
+      }
+    ],
+    "sourceQueryCulture": "en-GB",
+    "tables": [
+      {
+        "name": "Professionals in Data and AI Survey 1",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Timestamp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "d20b4f44-89bf-4217-955a-f4bbf6f4adbb",
+            "sourceColumn": "Timestamp",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_d2c7ea74-2e36-4899-94c9-6228b4acb044"
+                },
+                "isDefault": true,
+                "relationship": "21fe65a0-91eb-4c42-8203-e23e41f278fa"
+              }
+            ]
+          },
+          {
+            "name": "Username",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f0b2666f-e067-49b3-a12c-e89a2a9accd8",
+            "sourceColumn": "Username",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Your Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "78a732da-4107-4e20-8ae6-adfb0c287834",
+            "sourceColumn": "Your Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Your email",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bc4226cc-be0d-4b0f-810e-92b69d4851f7",
+            "sourceColumn": "Your email",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Your Phone number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "340246dc-2712-49f7-9633-a1ea3bc40340",
+            "sourceColumn": "Your Phone number",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d4f65ef0-5a5f-4501-a289-e55175dce1fd",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kindly specify your location",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "062e428a-62c8-4de9-b233-915b5e1ddaa0",
+            "sourceColumn": "Kindly specify your location",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Your Current Industry",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3313b4cb-6de0-44d7-806d-3250c7b9be32",
+            "sourceColumn": "Your Current Industry",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Your current role",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0784d7c6-4422-4e9c-b8cd-f9f6f347d13d",
+            "sourceColumn": "Your current role",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Does your current role involve use of data and analytics",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8736d245-d585-418b-b2bd-5f9aac47632f",
+            "sourceColumn": "Does your current role involve use of data and analytics",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Your current level of experience in Data, Analytics and AI ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "74b9b691-67fd-44e4-93d7-c07f273d5bae",
+            "sourceColumn": "Your current level of experience in Data, Analytics and AI ",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What Analytics tools will you be interested in",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "78f5253d-3603-4285-9795-cc24ecef8b4f",
+            "sourceColumn": "What Analytics tools will you be interested in",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "What are your training needs",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "baf4e382-42d1-464d-8c15-0c036afa7808",
+            "sourceColumn": "What are your training needs",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kindly specify your location if you select others in previous question",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5b0e588c-b788-4216-bad8-71b73214d007",
+            "sourceColumn": "Kindly specify your location if you select others in previous question",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "5788ebce-6e7e-45c0-ac4e-f6da8b93c417",
+        "partitions": [
+          {
+            "name": "Professionals in Data and AI Survey 1",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\oluwa\\OneDrive\\2024\\Professionals in Data\\Professionals in Data and AI.csv\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Timestamp\", type datetime}, {\"Username\", type text}, {\"Your Name\", type text}, {\"Your email\", type text}, {\"Your Phone number\", type text}, {\"Gender\", type text}, {\"Kindly specify your location\", type text}, {\"Your Current Industry\", type text}, {\"Your current role\", type text}, {\"Does your current role involve use of data and analytics\", type text}, {\"Your current level of experience in Data, Analytics and AI \", type text}, {\"What Analytics tools will you be interested in\", type text}, {\"What are your training needs\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_6b45878e-7cc1-4ae5-8996-917885b0a053",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "97509c70-7336-4e23-9acf-a5470cca9ab0",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "abdfaa8c-ee8b-4a36-9dc3-9d2fed3f8537",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "0f46ccd9-0a9a-403e-8e9d-bb1ef65792aa",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "0ecbcbbe-e0ff-44ff-afba-7434cf584e9a",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "0fd0f590-5018-4bf9-81f3-26ffb9cb5f4c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "c52c83b0-eeac-44e6-9598-c1038bf50290",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "78aa2c96-90e0-4971-ad37-f70b601b7644",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "fa40d9a0-efd9-4b7e-82cb-a1df86aacb5b",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "216dd6fa-b3f1-4e39-a43b-1e1563c6a610",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "8b8c404d-16e4-4857-8062-cf303012d482",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "98986a30-6132-4a77-896e-68e36395e488",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "2cf9ecf4-8157-4bbb-a1ca-7c8d59a5cc82"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "71057cf3-dd2a-4ba9-9937-788d0c406e99",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_6b45878e-7cc1-4ae5-8996-917885b0a053",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_d2c7ea74-2e36-4899-94c9-6228b4acb044",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "55a1c4eb-76fd-47e3-bb58-8d102a407326",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "88f573ba-63e4-4be2-8959-0251f3e61554",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "44757668-e26e-4be1-a8cd-9af1e7f68a1f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "306673cb-1fde-463f-9954-1803324674e0",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "7b3f378d-a043-4c6a-9d97-8a33cebc0f36",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "d0b90e45-6364-4a35-a12e-49777d4aa6ce",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "1431b6d0-c1da-4616-8eba-e01680ce88a7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "8ccdbfb4-626e-431b-8cd7-a9aa2b422b0b",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "34393a4c-bf8f-48bc-b645-47ee423062e0",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "a56bef43-9f97-423b-a717-808eadbb399f",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "03b6e799-05a6-4aae-9f6b-610c7f46e46a",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "2b4a49ab-7182-4f7b-a7ed-9dfe27a27831"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "c4b44049-202b-474c-91f1-3aefa57fa545",
+        "partitions": [
+          {
+            "name": "LocalDateTable_d2c7ea74-2e36-4899-94c9-6228b4acb044",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Professionals in Data and AI Survey 1'[Timestamp])), 1, 1), Date(Year(MAX('Professionals in Data and AI Survey 1'[Timestamp])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Professionals in Data and AI Survey 1 (2)",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Attribute",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d789f7c9-4c7b-4192-882c-bcdb1fe1f850",
+            "sourceColumn": "Attribute",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Value",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9df16f86-c148-4f30-968b-adee02978e0c",
+            "sourceColumn": "Value",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Your Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bb1866f6-7e85-4354-8be1-e28893e6e055",
+            "sourceColumn": "Your Name",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b0b1cd2e-7676-462c-a70c-6920c52b2084",
+        "partitions": [
+          {
+            "name": "Professionals in Data and AI Survey 1 (2)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\oluwa\\OneDrive\\2024\\Professionals in Data\\Professionals in Data and AI.csv\"),[Delimiter=\",\", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Timestamp\", type datetime}, {\"Username\", type text}, {\"Your Name\", type text}, {\"Your email\", type text}, {\"Your Phone number\", type text}, {\"Gender\", type text}, {\"Kindly specify your location\", type text}, {\"Your Current Industry\", type text}, {\"Your current role\", type text}, {\"Does your current role involve use of data and analytics\", type text}, {\"Your current level of experience in Data, Analytics and AI \", type text}, {\"What Analytics tools will you be interested in\", type text}, {\"What are your training needs\", type text}}),",
+                "    #\"Removed Other Columns1\" = Table.SelectColumns(#\"Changed Type\",{\"Your Name\", \"What Analytics tools will you be interested in\"}),",
+                "    #\"Split Column by Delimiter\" = Table.SplitColumn(#\"Removed Other Columns1\", \"What Analytics tools will you be interested in\", Splitter.SplitTextByDelimiter(\";\", QuoteStyle.Csv), {\"What Analytics tools will you be interested in.1\", \"What Analytics tools will you be interested in.2\", \"What Analytics tools will you be interested in.3\", \"What Analytics tools will you be interested in.4\", \"What Analytics tools will you be interested in.5\", \"What Analytics tools will you be interested in.6\", \"What Analytics tools will you be interested in.7\", \"What Analytics tools will you be interested in.8\", \"What Analytics tools will you be interested in.9\", \"What Analytics tools will you be interested in.10\"}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Split Column by Delimiter\",{{\"What Analytics tools will you be interested in.1\", type text}, {\"What Analytics tools will you be interested in.2\", type text}, {\"What Analytics tools will you be interested in.3\", type text}, {\"What Analytics tools will you be interested in.4\", type text}, {\"What Analytics tools will you be interested in.5\", type text}, {\"What Analytics tools will you be interested in.6\", type text}, {\"What Analytics tools will you be interested in.7\", type text}, {\"What Analytics tools will you be interested in.8\", type text}, {\"What Analytics tools will you be interested in.9\", type text}, {\"What Analytics tools will you be interested in.10\", type text}}),",
+                "    #\"Unpivoted Other Columns\" = Table.UnpivotOtherColumns(#\"Changed Type1\", {\"Your Name\"}, \"Attribute\", \"Value\"),",
+                "    #\"Filtered Rows\" = Table.SelectRows(#\"Unpivoted Other Columns\", each ([Value] <> \"\" and [Value] <> \"All the aspect of the data analysis \" and [Value] <> \"None other \"))",
+                "in",
+                "    #\"Filtered Rows\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
